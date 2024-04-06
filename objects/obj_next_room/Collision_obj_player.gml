@@ -1,3 +1,5 @@
+var _level = obj_game_manager.level_no;
+
 if(room == rm_main) {
 	if(_level % 2 == 0) {
 		room_goto(rm_shop);
