@@ -1,0 +1,2 @@
+draw_text_transformed_color(x+5, y+5, "This is end screen, You have completed "+string(level)+" levels", 1, 1, 0, c_white, c_white, c_white, c_white, 1)
+draw_text_transformed_color(x+5, y+25, "Alt + S to continue", 1, 1, 0, c_white, c_white, c_white, c_white, 1)

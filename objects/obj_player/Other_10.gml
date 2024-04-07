@@ -4,6 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-if(instance_exists(obj_game_manager)) {
-	hp = obj_game_manager.playerHp;
-}
+room_goto(rm_end)
