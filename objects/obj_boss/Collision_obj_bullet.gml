@@ -1,2 +1,2 @@
-hp -= 15
+hp -= other.damage
 instance_destroy(other)

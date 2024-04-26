@@ -10,6 +10,7 @@ instance_create_layer(spawnx,spawny, "Instances",obj_bullet,
 	speed: bulletSpeed,
 	direction: randomSpread + point_direction(x,y,mouse_x,mouse_y),
 	isIncendiary: shootIncendiary,
+	damage: damage,
 });
 
 if(shootsThree) {
@@ -18,12 +19,14 @@ if(shootsThree) {
 			speed: bulletSpeed,
 			direction: randomSpread2 + point_direction(x,y,mouse_x,mouse_y) - shootAngle,
 			isIncendiary: shootIncendiary,
+			damage: damage,
 	});
 	instance_create_layer(spawnx,spawny, "Instances",obj_bullet, 
 		{
 			speed: bulletSpeed,
 			direction: randomSpread3 + point_direction(x,y,mouse_x,mouse_y) + shootAngle,
 			isIncendiary: shootIncendiary,
+			damage: damage,
 	});
 }
 

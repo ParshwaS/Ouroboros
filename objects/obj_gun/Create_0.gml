@@ -2,6 +2,9 @@
 // You can write your code in this editor
 bullet_width=sprite_get_width(spr_bullet)/2;
 
+primary = false;
+secondary = false;
+
 isEquipped = false;
 
 canFire = true;
@@ -25,7 +28,7 @@ spread = 0;
 shootIncendiary = false;
 shootsThree = false;
 bulletSpeed = 5;
-shootAngle = irandom_range(5,15);
+shootAngle = random_gauss(10, 2.5);
 
 switch(speed_picker) {
 
@@ -92,4 +95,3 @@ currentMag = magazineSize;
 
 str_firespeed = string(firespeed);
 str_damage = string(damage);
-show_debug_message("firespeed: " + str_firespeed + " damage: " + str_damage);

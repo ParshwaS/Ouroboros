@@ -171,7 +171,9 @@ for(var _i=0; _i < width_; _i++){
 		}
 		if(grid_[# _i, _j] == SPAWN) {
 			instance_create_layer(_i * CELL_WIDTH - (CELL_WIDTH / 2), _j * CELL_HEIGHT - (CELL_HEIGHT / 2), "Instances", obj_player);
-			instance_create_layer(_i * CELL_WIDTH - (CELL_WIDTH / 2), _j * CELL_HEIGHT - (CELL_HEIGHT / 2), "Instances", obj_gun);
+			if(!instance_exists(obj_gun)){
+				instance_create_layer(_i * CELL_WIDTH - (CELL_WIDTH / 2), _j * CELL_HEIGHT - (CELL_HEIGHT / 2), "Instances", obj_gun);
+			}
 		}
 		if(grid_[# _i, _j] == MONSTER) {
 			instance_create_layer(_i * CELL_WIDTH, _j * CELL_HEIGHT, "Instances", obj_enemy);
@@ -181,6 +183,9 @@ for(var _i=0; _i < width_; _i++){
 		}
 		if(grid_[# _i, _j] == WALL) {
 			instance_create_layer(_i * CELL_WIDTH, _j * CELL_HEIGHT, "Instances", obj_collision);
+		}
+		if(grid_[# _i, _j] == CHEST) {
+			instance_create_layer(_i * CELL_WIDTH, _j * CELL_HEIGHT, "Instances", obj_chest);
 		}
 	}
 }

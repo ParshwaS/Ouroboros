@@ -6,7 +6,7 @@
 
 #macro SPAWN_ROOMS 2
 #macro BOSS_ROOMS 2
-#macro SHOP_ROOMS 2
+#macro SHOP_ROOMS 0
 
 #macro VOID 1
 #macro WALL 2
@@ -39,43 +39,9 @@ ds_grid_set_region(_base_room, 0, 0, ROOM_SIZE, ROOM_SIZE, VOID)
 ds_grid_set_region(_base_room, HALLWAY_WIDTH, HALLWAY_WIDTH, ROOM_SIZE-HALLWAY_WIDTH, ROOM_SIZE-HALLWAY_WIDTH, WALL)
 ds_grid_set_region(_base_room, HALLWAY_WIDTH+1, HALLWAY_WIDTH+1, ROOM_SIZE-HALLWAY_WIDTH-1, ROOM_SIZE-HALLWAY_WIDTH-1, FLOOR)
 
-
-var _spawn_room_1 = ds_grid_create(ROOM_SIZE, ROOM_SIZE)
-
-ds_grid_copy(_spawn_room_1, _base_room)
-
-ds_grid_set(_spawn_room_1, ROOM_SIZE div 2, ROOM_SIZE div 2, SPAWN)
-
-ds_list_add(global.room_list, _spawn_room_1)
-
-var _spawn_room_2 = ds_grid_create(ROOM_SIZE, ROOM_SIZE)
-
-ds_grid_copy(_spawn_room_2, _base_room)
-
-ds_grid_set(_spawn_room_2, ROOM_SIZE div 2 - 4, ROOM_SIZE div 2, SPAWN)
-
-ds_list_add(global.room_list, _spawn_room_2)
-
-var _boss_room_1 = ds_grid_create(ROOM_SIZE, ROOM_SIZE)
-
-ds_grid_copy(_boss_room_1, _base_room)
-
-ds_grid_set(_boss_room_1, ROOM_SIZE div 2, ROOM_SIZE div 2, BOSS)
-
-ds_list_add(global.room_list, _boss_room_1)
-
-var _boss_room_2 = ds_grid_create(ROOM_SIZE, ROOM_SIZE)
-
-ds_grid_copy(_boss_room_2, _base_room)
-
-ds_grid_set(_boss_room_2, ROOM_SIZE div 2, ROOM_SIZE div 2, BOSS)
-
-ds_list_add(global.room_list, _boss_room_2)
-
-var _room_1 = ds_grid_create(ROOM_SIZE, ROOM_SIZE)
-
-ds_grid_copy(_room_1, _base_room)
-
-ds_grid_set(_room_1, ROOM_SIZE div 2, ROOM_SIZE div 2, MONSTER)
-
-ds_list_add(global.room_list, _room_1)
+ds_list_add(global.room_list, spawn_room1(_base_room))
+ds_list_add(global.room_list, spawn_room2(_base_room))
+ds_list_add(global.room_list, boss_room1(_base_room))
+ds_list_add(global.room_list, boss_room2(_base_room))
+ds_list_add(global.room_list, simple_room1(_base_room))
+ds_list_add(global.room_list, simple_room2(_base_room))
