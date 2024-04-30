@@ -1,0 +1,3 @@
+if(!primary) {	
+	hovering = false;
+}

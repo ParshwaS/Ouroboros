@@ -13,8 +13,10 @@ secondaryGun = noone
 maxInteractDistance = 10
 
 with(obj_gun) {
-	if(primary) {
-		other.primaryGun = id
+	if(instance_exists(id) && variable_instance_exists(id, "primary")){
+		if(primary){
+			other.primaryGun = id
+		}
 	}
 }
 

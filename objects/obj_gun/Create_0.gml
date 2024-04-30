@@ -2,10 +2,9 @@
 // You can write your code in this editor
 bullet_width=sprite_get_width(spr_bullet)/2;
 
-primary = false;
-secondary = false;
+hovering = false;
 
-isEquipped = false;
+primary = false;
 
 canFire = true;
 reloading = false;
@@ -15,6 +14,9 @@ damage = 10;
 magazineSize = 0;
 currentMag = 0;
 reloadTime = 120;
+
+firedlastframe = false;
+
 
 xadd = 0;
 yadd = 0;
@@ -28,7 +30,8 @@ spread = 0;
 shootIncendiary = false;
 shootsThree = false;
 bulletSpeed = 5;
-shootAngle = random_gauss(10, 2.5);
+shootAngle = irandom_range(5,15);
+crit_chance = 5;
 
 switch(speed_picker) {
 
@@ -84,7 +87,7 @@ for(i = 0; i < rarity; i++) {
 		case 3: 
 			shootsThree = true;
 		case 4: 
-			magazineSize *= 1.5;
+			crit_chance = 20;
 	}
 	
 	
@@ -95,3 +98,4 @@ currentMag = magazineSize;
 
 str_firespeed = string(firespeed);
 str_damage = string(damage);
+show_debug_message("firespeed: " + str_firespeed + " damage: " + str_damage);

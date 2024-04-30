@@ -37,8 +37,19 @@ if(interactingObj != noone and object_get_name(interactingObj.object_index) == "
 		}
 		primaryGun = interactingObj
 	}
+	
 	with primaryGun{
-		primary = true
+		if(isShopItem) {
+			if(obj_game_manager.coins < price) {
+				other.primaryGun = noone;
+			} else {
+				isShopItem = false;
+				obj_game_manager.coins -= price;
+				primary = true;
+			}
+		} else {
+			primary = true;
+		}
 	}
 }
 
