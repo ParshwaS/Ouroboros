@@ -4,6 +4,8 @@ bullet_width=sprite_get_width(spr_bullet)/2;
 
 hovering = false;
 
+depth = -10;
+
 primary = false;
 
 canFire = true;
