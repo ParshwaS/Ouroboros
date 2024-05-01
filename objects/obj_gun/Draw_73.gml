@@ -4,6 +4,7 @@ textboxX =x +sprite_width/2 + 20;
 textboxY = y -sprite_height/2 - 20
 if(hovering) {
 	draw_set_font(font_gun)
+	draw_set_color(c_white);
 	hh = string_height("h")
 	draw_sprite(spr_textbox, 0,textboxX, textboxY)
 	i = 0;
@@ -32,12 +33,8 @@ if(hovering) {
 		draw_text(textboxX + 4, textboxY + 2 + (hh*i),"Incendiary")
 		i++;
 	}
-	if(crit_chance = 20) {
+	if(crit_chance == 20) {
 		draw_text(textboxX + 4, textboxY + 2 + (hh*i),"Crit Chance")
 		i++;
-	}
-	
-	
-	
-	
+	}	
 }

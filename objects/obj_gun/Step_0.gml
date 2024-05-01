@@ -41,20 +41,7 @@ if(primary) {
 		
 		image_xscale = 1.2;
 		image_yscale = 1.2;
-	
-		if(keyboard_check(ord("F"))){
-			if(instance_exists(obj_player)) {
-				with(obj_gun) {
-					isEquipped = false;
-					image_angle = 0;
-				}
-				isEquipped = true;
-				hovering = false;
-				image_xscale = 1;
-				image_yscale = 1;
-			}
-			
-		}
+
 	
 	} else {
 		image_xscale = 1;

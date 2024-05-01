@@ -28,7 +28,6 @@ function check_collision(_move_x, _move_y)
 	// collision was found at any given corner, we return true and end the function.
 	if (_left_top == WALL or _right_top == WALL  or _right_bottom == WALL  or _left_bottom == WALL)
 	{
-		show_debug_message("Collision")
 		return true;
 	}
 	// If no tile collisions were found, the function continues.

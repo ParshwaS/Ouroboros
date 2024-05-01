@@ -6,14 +6,16 @@ if(burning > 0) {
 	alarm[0] = 30;
 }
 
+var step_speed = clamp(enemySpeed * (obj_game_manager.level_no / 30), 1, 10);
+
 if(instance_exists(obj_player)){
 	if(distance_to_object(obj_player) <= maxLookDistance){
 	
 		var _path = path_add();
 		
-		mp_potential_path(_path, obj_player.x, obj_player.y, 3, 4, false);
+		mp_potential_path(_path, obj_player.x, obj_player.y, step_speed, 4, false);
 		
-		path_start(_path, 3, path_action_stop, false);
+		path_start(_path, step_speed, path_action_stop, false);
 	
 	}
 }

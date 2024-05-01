@@ -6,6 +6,8 @@ var _tile_decore = layer_tilemap_get_id("Tile_Decore");
 
 _level_no = obj_game_manager.level_no
 
+required_rooms = required_rooms + (_level_no div 15);
+
 width_ = room_width div CELL_WIDTH;
 height_ = room_height div CELL_HEIGHT;
 
