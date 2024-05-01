@@ -1,7 +1,7 @@
 if(hovering && !primary) {
 	if(instance_exists(obj_player)) {
 		distance = point_distance(x, y, obj_player.x, obj_player.y);
-		if(distance < 15) {
+		if(distance < 50) {
 			if(obj_player.primaryGun != noone) {
 				with (obj_player.primaryGun) {
 					primary = false;

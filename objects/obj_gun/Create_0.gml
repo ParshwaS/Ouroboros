@@ -2,9 +2,9 @@
 // You can write your code in this editor
 bullet_width=sprite_get_width(spr_bullet)/2;
 
-hovering = false;
+depth = -10
 
-depth = -10;
+hovering = false;
 
 primary = false;
 
@@ -49,7 +49,6 @@ switch(speed_picker) {
 	case 1:
 		firespeed = irandom_range(17, 25)
 		damage = irandom_range(15, 30);
-		spread = 2;
 		xadd = 6;
 		yadd = 3;
 		spread = irandom_range(3,6);

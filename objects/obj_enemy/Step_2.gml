@@ -1,8 +1,13 @@
 // Inherit the parent event
 event_inherited();
 
+
+if(burning > 0) {
+	alarm[0] = 30;
+}
+
 if(instance_exists(obj_player)){
-	if(distance_to_object(obj_player) <= 160){
+	if(distance_to_object(obj_player) <= maxLookDistance){
 	
 		var _path = path_add();
 		

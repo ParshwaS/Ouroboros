@@ -1,6 +1,6 @@
 {
   "$GMProject":"",
-  "%Name":"updateGuns",
+  "%Name":"Project 2",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -32,10 +32,8 @@
   "MetaData":{
     "IDEVersion":"2024.2.0.132",
   },
-  "name":"updateGuns",
+  "name":"Project 2",
   "resources":[
-    {"id":{"name":"font_gun","path":"fonts/font_gun/font_gun.yy",},},
-    {"id":{"name":"font_main","path":"fonts/font_main/font_main.yy",},},
     {"id":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_character","path":"objects/obj_character/obj_character.yy",},},
@@ -60,8 +58,6 @@
     {"id":{"name":"spr_ar","path":"sprites/spr_ar/spr_ar.yy",},},
     {"id":{"name":"spr_boss","path":"sprites/spr_boss/spr_boss.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
-    {"id":{"name":"spr_critbullet","path":"sprites/spr_critbullet/spr_critbullet.yy",},},
-    {"id":{"name":"spr_chest","path":"sprites/spr_chest/spr_chest.yy",},},
     {"id":{"name":"spr_collision","path":"sprites/spr_collision/spr_collision.yy",},},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},},
     {"id":{"name":"spr_incendiarybullet","path":"sprites/spr_incendiarybullet/spr_incendiarybullet.yy",},},
@@ -69,10 +65,10 @@
     {"id":{"name":"spr_pistol","path":"sprites/spr_pistol/spr_pistol.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_smg","path":"sprites/spr_smg/spr_smg.yy",},},
-    {"id":{"name":"spr_textbox","path":"sprites/spr_textbox/spr_textbox.yy",},},
     {"id":{"name":"spr_tileset_complete","path":"sprites/spr_tileset_complete/spr_tileset_complete.yy",},},
     {"id":{"name":"spr_tileset","path":"sprites/spr_tileset/spr_tileset.yy",},},
     {"id":{"name":"spr_ts_wall_floor","path":"sprites/spr_ts_wall_floor/spr_ts_wall_floor.yy",},},
+    {"id":{"name":"spr_chest","path":"sprites/spr_chest/spr_chest.yy",},},
     {"id":{"name":"spt_ts_decor","path":"sprites/spt_ts_decor/spt_ts_decor.yy",},},
     {"id":{"name":"ts_decor","path":"tilesets/ts_decor/ts_decor.yy",},},
     {"id":{"name":"ts_tileset","path":"tilesets/ts_tileset/ts_tileset.yy",},},

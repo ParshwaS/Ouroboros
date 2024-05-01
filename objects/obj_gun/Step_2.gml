@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if(primary) {
-
+	hovering = false;
 	if(object_exists(obj_player)) {
 
 		x = obj_player.x;
@@ -38,9 +38,9 @@ if(primary) {
 		var randomSpread3 = spread/2 - irandom_range(0, spread); 
 
 		var crit = random(100)
-		var tempDamage = damage;
+		var isCrit = false
 		if(crit < crit_chance) {
-			tempDamage = damage * 2;
+				isCrit =true
 		}
 
 		instance_create_layer(spawnx,spawny, "Instances",obj_bullet, 
@@ -48,38 +48,41 @@ if(primary) {
 			speed: bulletSpeed,
 			direction: randomSpread + point_direction(x,y,mouse_x,mouse_y),
 			isIncendiary: shootIncendiary,
-			damage: tempDamage
+			damage: damage,
+			isCrit: isCrit
 	
 
 		});
 
 
 		if(shootsThree) {
+			isCrit = false;
 			crit = random(100)
-			tempDamage = damage;
 			if(crit < crit_chance) {
-				tempDamage = damage * 2;
+				isCrit =true
 			}
 			instance_create_layer(spawnx,spawny, "Instances",obj_bullet, 
 				{
 					speed: bulletSpeed,
 					direction: randomSpread2 + point_direction(x,y,mouse_x,mouse_y) - shootAngle,
 					isIncendiary: shootIncendiary,
-					damage: tempDamage
+					damage: damage,
+					isCrit: isCrit
 	
 
 			});
 			crit = random(100)
-			tempDamage = damage;
+			isCrit = false
 			if(crit < crit_chance) {
-				tempDamage = damage * 2;
+				isCrit =true
 			}
 			instance_create_layer(spawnx,spawny, "Instances",obj_bullet, 
 				{
 					speed: bulletSpeed,
 					direction: randomSpread3 + point_direction(x,y,mouse_x,mouse_y) + shootAngle,
 					isIncendiary: shootIncendiary,
-					damage: tempDamage
+					damage: damage,
+					isCrit: isCrit
 	
 
 			});
