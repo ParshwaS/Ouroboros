@@ -80,6 +80,7 @@
     {"name":"spr_tileset_complete","order":2,"path":"sprites/spr_tileset_complete/spr_tileset_complete.yy",},
     {"name":"spr_ts_wall_floor","order":3,"path":"sprites/spr_ts_wall_floor/spr_ts_wall_floor.yy",},
     {"name":"Sprite23","order":19,"path":"sprites/Sprite23/Sprite23.yy",},
+    {"name":"spr_logo","order":22,"path":"sprites/spr_logo/spr_logo.yy",},
     {"name":"spt_ts_decor","order":4,"path":"sprites/spt_ts_decor/spt_ts_decor.yy",},
     {"name":"ts_decor","order":3,"path":"tilesets/ts_decor/ts_decor.yy",},
     {"name":"wall_floor","order":2,"path":"tilesets/wall_floor/wall_floor.yy",},

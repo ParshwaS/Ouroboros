@@ -9,7 +9,7 @@
   "managed":true,
   "name":"obj_perma_health_buff",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_healing_fountain","path":"objects/obj_healing_fountain/obj_healing_fountain.yy",},"propertyId":{"name":"price","path":"objects/obj_healing_fountain/obj_healing_fountain.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_healing_fountain","path":"objects/obj_healing_fountain/obj_healing_fountain.yy",},"propertyId":{"name":"price","path":"objects/obj_healing_fountain/obj_healing_fountain.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"45",},
   ],
   "parent":{
     "name":"Objects",
