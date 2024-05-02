@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_stomp",
+  "%Name":"snd_incendiary",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.38449,
-  "name":"snd_stomp",
+  "duration":1.253878,
+  "name":"snd_incendiary",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_stomp.mp3",
+  "soundFile":"snd_incendiary.mp3",
   "type":0,
-  "volume":0.44,
+  "volume":0.12,
 }
