@@ -1,0 +1,1 @@
+draw_no_money = false

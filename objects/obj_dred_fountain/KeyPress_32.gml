@@ -5,6 +5,10 @@ if(hovering) {
 			if(obj_game_manager.coins >= price) {
 				obj_game_manager.coins -= price;
 				obj_game_manager.dred = 0;
+			} else {
+				with (obj_game_manager) {
+					event_user(0);
+				}
 			}
 		}
 	}

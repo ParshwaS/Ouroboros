@@ -6,7 +6,7 @@ if(burning > 0) {
 	alarm[0] = 30;
 }
 
-var step_speed = clamp(enemySpeed * (obj_game_manager.level_no / 30), 1, 10);
+var step_speed = clamp(enemySpeed * (obj_game_manager.level_no / 25), 2, 10);
 
 if(instance_exists(obj_player)){
 	if(distance_to_object(obj_player) <= maxLookDistance){
