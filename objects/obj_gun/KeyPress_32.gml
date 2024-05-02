@@ -9,6 +9,7 @@ if(hovering && !primary) {
 		if(check) {
 			if(isShopItem) {
 				if(obj_game_manager.coins >= price) {
+					audio_play_sound(snd_gun_pickup, 1, false)
 					if(obj_player.primaryGun != noone) {
 						with (obj_player.primaryGun) {
 							primary = false;
@@ -33,5 +34,6 @@ if(hovering && !primary) {
 				primary = true;
 			}
 		}
+		audio_play_sound(snd_gun_pickup, 1, false)
 	}
 }

@@ -6,6 +6,8 @@ event_inherited();
 
 depth = -10
 
+audio_play_sound(snd_ambient_theme, 1, true)
+
 if(instance_exists(obj_game_manager)) {
 	hp = obj_game_manager.playerHp;
 }

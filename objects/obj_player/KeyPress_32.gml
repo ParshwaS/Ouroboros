@@ -16,6 +16,7 @@ with obj_chest{
 	if thisDistance < bestDistance {
 		bestDistance = thisDistance
 		interactingObj = id
+		audio_play_sound(snd_chest, 1, false)
 	}
 }
 
