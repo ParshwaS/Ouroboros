@@ -6,7 +6,13 @@ if(hovering) {
 	draw_set_font(font_gun)
 	draw_set_color(c_white);
 	hh = string_height("h")
-	draw_sprite(spr_textbox, 0,textboxX, textboxY)
+	if(rarity <= common) {
+			draw_sprite(spr_textbox, 0,textboxX, textboxY)
+		} else if(rarity <= uncommon) {
+			draw_sprite(spr_textboxUncommon, 0,textboxX, textboxY)
+		} else {
+			draw_sprite(spr_textboxRare, 0,textboxX, textboxY)
+		}
 	i = 0;
 	if(isShopItem) {
 		draw_text(textboxX + 2, textboxY + 2 + (hh *i) ,"Price: "+string(price));

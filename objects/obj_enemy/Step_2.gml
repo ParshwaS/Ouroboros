@@ -3,11 +3,10 @@ event_inherited();
 
 
 if(burning > 0) {
-	alarm[0] = 30;
+	alarm[0] = 1;
 }
 
 var step_speed = clamp(enemySpeed * (obj_game_manager.level_no / 25), 2, 10);
-
 if(instance_exists(obj_player)){
 	if(distance_to_object(obj_player) <= maxLookDistance){
 	

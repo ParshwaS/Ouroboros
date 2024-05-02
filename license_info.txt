@@ -15,3 +15,45 @@ Tile Set:
 https://pixel-poem.itch.io/dungeon-assetpuck
 
 Both are free for free and commercial use
+
+Audio:
+
+All in-game audio is royalty-free, provided by https://uppbeat.io
+
+Music:
+
+Realite Virtuelle: Dorian Pinto
+
+Epic Choir Of The Damned: Giulio Fazio
+
+Heart of the Beast: Kevin Macleod
+
+Sounds: 
+
+Gunshot-assault rifle: FascinatedSound
+
+Gunshot-assault rifle (Heavy): FascinatedSound
+
+Low bell bong: Thomas Herudek
+
+Magic game - ethereal alert: Ni Sound
+
+Video game - item pick up: Gamemaster Audio
+
+Magic spell - health heal: Epic Stock Media
+
+Sword Impacting flesh: Gamemaster Audio
+
+Death gurgle stab: Locran
+
+Troll monster- death growl: Gamemaster Audio
+
+Troll monster - death groan: Gamemaster Audio 
+
+Car door opened: Joshua Chivers
+
+Combat - body fall: Joshua Chivers
+
+Bullet impacting ice: Joshua Chivers
+
+Footsteps walking on stone: Joshua Chivers

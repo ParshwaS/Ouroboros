@@ -8,6 +8,7 @@ repeat (_move_count)
 	if (!_collision_found)
 	{
 		x += _move_once;
+		
 	}
 	else
 	{
@@ -26,6 +27,7 @@ repeat (_move_count)
 	if (!_collision_found)
 	{
 		y += _move_once;
+		
 	}
 	else
 	{

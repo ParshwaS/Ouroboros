@@ -17,6 +17,7 @@
     {"name":"inst_1EF12776","path":"rooms/rm_shop/rm_shop.yy",},
     {"name":"inst_BD8907","path":"rooms/rm_shop/rm_shop.yy",},
     {"name":"inst_6A94134E","path":"rooms/rm_shop/rm_shop.yy",},
+    {"name":"inst_7DE65889","path":"rooms/rm_shop/rm_shop.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -38,6 +39,7 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":736.0,"y":384.0,},
         {"$GMRInstance":"","%Name":"inst_BD8907","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_BD8907","objectId":{"name":"obj_healing_fountain","path":"objects/obj_healing_fountain/obj_healing_fountain.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":535.0,"y":490.0,},
         {"$GMRInstance":"","%Name":"inst_6A94134E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6A94134E","objectId":{"name":"obj_dred_fountain","path":"objects/obj_dred_fountain/obj_dred_fountain.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":842.0,"y":490.0,},
+        {"$GMRInstance":"","%Name":"inst_7DE65889","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7DE65889","objectId":{"name":"obj_perma_health_buff","path":"objects/obj_perma_health_buff/obj_perma_health_buff.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":448.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Wall_Floors","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Wall_Floors","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[
           -1236,-2147483648,1,13,-21,9,1,14,-63,-2147483648,2,13,34,-19,32,2,33,14,-63,-2147483648,2,13,26,-19,
