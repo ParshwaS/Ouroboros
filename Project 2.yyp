@@ -104,6 +104,7 @@
     {"id":{"name":"spr_tileset","path":"sprites/spr_tileset/spr_tileset.yy",},},
     {"id":{"name":"spr_ts_wall_floor","path":"sprites/spr_ts_wall_floor/spr_ts_wall_floor.yy",},},
     {"id":{"name":"Sprite23","path":"sprites/Sprite23/Sprite23.yy",},},
+    {"id":{"name":"spr_logo","path":"sprites/spr_logo/spr_logo.yy",},},
     {"id":{"name":"spt_ts_decor","path":"sprites/spt_ts_decor/spt_ts_decor.yy",},},
     {"id":{"name":"ts_decor","path":"tilesets/ts_decor/ts_decor.yy",},},
     {"id":{"name":"ts_tileset","path":"tilesets/ts_tileset/ts_tileset.yy",},},
