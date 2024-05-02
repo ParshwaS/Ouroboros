@@ -20,3 +20,13 @@ if(room == rm_shop and keyboard_check(vk_alt)){
 		room_goto(rm_main);
 	}
 }
+
+if(keyboard_check(vk_control)){
+	if(keyboard_check_pressed(ord("N"))){
+		room_goto(rm_main);
+	}
+	if(keyboard_check_pressed(ord("P"))){
+		level_no -= 2;
+		room_goto(rm_main);
+	}
+}

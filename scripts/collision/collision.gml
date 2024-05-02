@@ -7,9 +7,9 @@ function check_collision(_move_x, _move_y)
 {
 	// This checks for an object collision at the new position, where the instance is going to move
 	// We get the new position by adding _move_x and _move_y to the instance's X and Y values
-	if(place_meeting(x+_move_x,y+_move_y,obj_collision)) {
-		return true;
-	}
+	//if(place_meeting(x+_move_x,y+_move_y,obj_collision)) {
+	//	return true;
+	//}
 
 
 	var collision_tilemap = layer_tilemap_get_id(layer_get_id("TileSet"));

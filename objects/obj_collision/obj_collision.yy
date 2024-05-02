@@ -31,6 +31,9 @@
     "name":"spr_collision",
     "path":"sprites/spr_collision/spr_collision.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_collision",
+    "path":"sprites/spr_collision/spr_collision.yy",
+  },
   "visible":true,
 }

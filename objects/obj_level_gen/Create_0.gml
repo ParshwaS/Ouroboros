@@ -164,6 +164,13 @@ for(var _i=0; _i < width_; _i++){
 			if(_i+1 < width_ and grid_[# _i+1, _j] == WALL) _offset += RIGHT;
 			
 			if(_offset == FLOOR_OFFSET) {
+				var _test = irandom(800 / (_level_no / 30));
+				if(_test == 0) {
+					instance_create_layer(_i * CELL_WIDTH, _j * CELL_HEIGHT, "Instances", obj_enemy);
+				}
+			}
+			
+			if(_offset == FLOOR_OFFSET) {
 				_offset = irandom_range(FLOOR_OFFSET+14, FLOOR_OFFSET+15);
 			}
 			
