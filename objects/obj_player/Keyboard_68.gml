@@ -1,1 +1,2 @@
+isMoving = true
 event_perform(ev_keyboard, vk_right)

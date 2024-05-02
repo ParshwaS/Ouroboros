@@ -3,6 +3,7 @@ if(hovering) {
 		distance = point_distance(x, y, obj_player.x, obj_player.y);
 		if(distance < 50) {	
 			if(obj_game_manager.coins >= price) {
+				audio_play_sound(snd_cleansing, 1, false)
 				obj_game_manager.coins -= price;
 				obj_game_manager.dred = 0;
 			} else {
