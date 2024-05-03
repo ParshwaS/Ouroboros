@@ -132,12 +132,17 @@ for(var _i=0; _i < width_; _i++){
 			if(_j+1 < height_ and grid_[# _i, _j+1] == WALL) _offset += DOWN;
 			if(_i > 0 and grid_[# _i-1, _j] == WALL) _offset += LEFT;
 			if(_i+1 < width_ and grid_[# _i+1, _j] == WALL) _offset += RIGHT;
-		
+			
+			var _onlyFloor = false;
+			if(_offset != WALL_OFFSET) {
+				_onlyFloor = true;
+			}
+			
 			if(_j > 0 and grid_[# _i, _j-1] == FLOOR) _offset += UP;
 			if(_j+1 < height_ and grid_[# _i, _j+1] == FLOOR) _offset += DOWN;
 			if(_i > 0 and grid_[# _i-1, _j] == FLOOR) _offset += LEFT;
 			if(_i+1 < width_ and grid_[# _i+1, _j] == FLOOR) _offset += RIGHT;
-		
+
 			if(_offset == WALL_OFFSET + UP + DOWN + LEFT + RIGHT) {
 				if(grid_[# _i-1, _j] == FLOOR and grid_[# _i, _j-1] == FLOOR) {
 					_offset -= UP + DOWN + LEFT + RIGHT;
@@ -183,6 +188,11 @@ for(var _i=0; _i < width_; _i++){
 			if(!instance_exists(obj_gun)){
 				instance_create_layer(_i * CELL_WIDTH - (CELL_WIDTH / 2), _j * CELL_HEIGHT - (CELL_HEIGHT / 2), "Instances", obj_gun);
 			}
+		}
+		if(grid_[# _i, _j] == OBST) {
+			tilemap_set(_wall_floor, FLOOR_OFFSET+14, _i, _j);
+			tilemap_set(_tile_decore, irandom_range(8, 10), _i, _j);
+			instance_create_layer(_i * CELL_WIDTH, _j * CELL_HEIGHT, "Instances", obj_collision);
 		}
 		if(grid_[# _i, _j] == MONSTER) {
 			instance_create_layer(_i * CELL_WIDTH, _j * CELL_HEIGHT, "Instances", obj_enemy);

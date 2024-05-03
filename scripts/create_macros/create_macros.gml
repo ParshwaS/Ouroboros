@@ -17,6 +17,7 @@
 #macro MONSTER 7
 #macro SHOP 8
 #macro BOSS 9
+#macro OBST 10
 
 #macro NORTH 0
 #macro SOUTH 1

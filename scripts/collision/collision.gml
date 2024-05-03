@@ -10,7 +10,10 @@ function check_collision(_move_x, _move_y)
 	//if(place_meeting(x+_move_x,y+_move_y,obj_collision)) {
 	//	return true;
 	//}
-
+	
+	if(place_meeting(x+_move_x, y+_move_y, obj_collision)) {
+		return true;
+	}
 
 	var collision_tilemap = layer_tilemap_get_id(layer_get_id("TileSet"));
 
