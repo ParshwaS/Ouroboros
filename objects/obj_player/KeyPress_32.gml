@@ -11,8 +11,8 @@ var interactingObj = noone
 //}
 
 with obj_chest{
-	var thisDistance = point_distance(x,y,other.x,other.y);
-			
+	var thisDistance = point_distance(x,y,other.x + other.sprite_xoffset ,other.y + other.sprite_yoffset);
+
 	if thisDistance < bestDistance {
 		bestDistance = thisDistance
 		interactingObj = id
