@@ -199,7 +199,7 @@ function simple_room4(_base_room){
 
     ds_grid_set(_simple_room4, ROOM_SIZE div 2 - 3, 2, OBST);
 
-    ds_grid_set(_simple_room4, ROOM_SIZE div 2 - 3, 3, MONSTER);
+    ds_grid_set(_simple_room4, ROOM_SIZE div 2 - 3, 5, MONSTER);
 
     ds_grid_set(_simple_room4, ROOM_SIZE div 2 - 2, 2, OBST);
 
